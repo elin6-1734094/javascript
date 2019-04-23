@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var number = 123;
+            var firstName = prompt("What is your first name?");
+            var lastName = prompt("What is your last name?");
+            var YOB = prompt("When were you born?")
+            var age = 2018 - YOB
+            var show = function(){
+                var txt = document.getElementById("myText"),
+                img = document.getElementById("image");
+                txt.innerHTML = "A nice view of campus!";
+                img.style.visibility = "visible";
+            }
+        </script>
+        <style>
+            body {
+                background: lightgray;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        #myText{
+            text-align: center; /*align our text in center*/
+            color: teal; /*set color to teal*/
+            font-family: Tahoma; /*change font family*/
+            font-size: 20px; /*set font size to 66 pixels*/
+        }
+        #image{
+            visibility: hidden;/* hide the image */
+            width: 20%; /* set width of image to 100% of body */
+            height: 20%; /* set height of image to 50% of body */
+        }
+        </style>
+    </head>
+    
+    <body>
+        <h1>
+            Welcome to UW Seattle! Nice to meet you I will be introducing you to some cool activities on campus.</h1>
+            <script type="text/javascript">
+            document.write("Hi " + firstName + " " + lastName + ", You are turning " + age + " years old this year!")
+            </script>
+            
+            <p onclick="show()" id="myText">Can't find Drumheller Fountain?</p>
+            <img src="drum.jpg" id="image">ls
+                
+                
+    </body>
+</html>
+
